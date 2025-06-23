@@ -1,0 +1,17 @@
+Im going to provide you with some typescript code. All I want you to do is tell me why it doesnt work the way I intend. Also I want you to provide me with some syntax or other aspect of typescript that will help me solve my problem. When providing this, do not solve the problem for me, and tell me what it does, and give minimal 1 example. These two things are all I want you to do nothing else.
+
+When I say the example should be minimal I mean that I shouldn't have to know some other syntax.
+Example of an example:
+
+Iterating over properties:
+```
+type A<T> {
+  [Ti in keyof T]: T[Ti]
+}
+```
+
+Again I dont want you to solve my problem
+
+Firstly:
+ 25 type First<T extends any[]> = T[0]
+This also needs to check if T is empty
